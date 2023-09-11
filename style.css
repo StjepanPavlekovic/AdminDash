@@ -77,6 +77,8 @@
   grid-template-rows: 1fr 2fr;
   gap: 20px;
   padding: 0 30px;
+
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .heading-left {
@@ -199,7 +201,7 @@
 
 .content {
   background-color: #e0e7ee;
-
+  color: rgba(0, 0, 0, 0.9);
   display: grid;
   grid-template-columns: auto 230px;
   gap: 20px;
@@ -230,6 +232,47 @@
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+
+  display: grid;
+  padding: 20px 25px;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content p {
+  color: #545454;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+.project-links img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 150px;
+}
+
+.project-links img:hover {
+  cursor: pointer;
+  background: rgb(237, 237, 237);
 }
 
 .card {
